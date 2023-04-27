@@ -1,0 +1,49 @@
+@import url(header.css);
+@import url(sobremim.css);
+@import url(aprendizado.css);
+@import url(projetos.css);
+@import url(contato.css);
+
+:root{
+    --rosa:#F90A72;
+    --verde:#0BF992;
+    --preto: #0A0A0A;
+    --branco:#EFEFEF;
+    --cinza:#AFAFAF;
+    --cinza-transparente: #afafaf50;
+    --font: 'Ubuntu', sans-serif;
+}
+
+body{
+    font-family: var(--font);
+    background: linear-gradient(90deg,var(--rosa), var(--verde));
+}
+
+b{
+    font-weight: 700;
+}
+
+main{
+    height: 95vh;
+    margin: 5vh 0 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+
+
+@media (max-width:300px) {
+    body{
+        font-size: 8px;
+    }
+}
+
+@media (max-width:600px) {
+    body{
+        font-size: 12px;
+    }
+}
+
+
