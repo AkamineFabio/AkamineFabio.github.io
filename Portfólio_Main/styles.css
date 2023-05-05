@@ -1,0 +1,59 @@
+@import url(header.css);
+@import url(presentation__styles.css);
+@import url(main__styles.css);
+@import url(aprendizado__styles.css);
+@import url(projetos__styles.css);
+@import url(contato__styles.css);
+
+:root{
+    --preto: #0A0A0A;
+    --preto-transparente:#0a0a0a88;
+    --branco:#EFEFEF;
+    --font: 'Ubuntu', sans-serif;
+    --blue-90:#0D1B2A;
+    --blue-70:#1B263B;
+    --blue-60:#2c3546;
+    --blue-50:#415A77;
+    --blue-30:#778DA9;
+    --blue-10:#E0E1DD;
+}
+
+body{
+    font-family: var(--font);
+    background-image: linear-gradient(to right,var(--blue-50),var(--blue-70));
+}
+
+*,*:before, *:after{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.flex{
+    display: flex;
+}
+
+.hasJS{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
