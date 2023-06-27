@@ -1,0 +1,81 @@
+
+/* PRESENTATION STYLES */
+
+.presentation{
+    padding-top: 6vh;
+}
+
+.presentation__container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 0;
+    min-height: 700px;
+    line-height: 1.125;
+}
+
+.presentation__title, .presentation__myname{
+    color: var(--blue-10);
+}
+
+.presentation__title{
+    font-size: 8rem;
+    font-weight: 900;
+}
+
+.presentation__myname{
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+@media(max-width:1200px) {
+
+    .presentation__container{
+        padding: 5rem 0;
+    }
+
+    .presentation__title{
+        font-size: 7rem;
+        font-weight: 900;
+    }
+    
+    .presentation__myname{
+        font-size: 3rem;
+        font-weight: 300;
+    }
+}
+
+@media(max-width:800px) {
+
+    .presentation__container{
+        padding: 5rem 0;
+    }
+
+    .presentation__title{
+        font-size: 6rem;
+        font-weight: 900;
+    }
+    
+    .presentation__myname{
+        font-size: 2.25rem;
+        font-weight: 300;
+    }
+}
+
+@media(max-width:500px) {
+
+    .presentation__container{
+        padding: 5rem 0;
+    }
+
+    .presentation__title{
+        font-size: 4rem;
+        font-weight: 900;
+    }
+    
+    .presentation__myname{
+        font-size: 1.75rem;
+        font-weight: 300;
+    }
+}
