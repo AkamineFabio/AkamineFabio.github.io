@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,Javascript,Portfólio,Front-End Júnior">
+    <meta name="description" content="Portfólio Front-End Júnior">
+    <meta name="author" content="Fabio Suzuki Akamine">
+    <title>Portfólio FrontEnd - Fabio Akamine</title>
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="header__nav">
+            <div class="menuHamb__container"><img src="imagens/hamb-menu.png" class="menuHamb__img"
+                    alt="ícone para menu"></div>
+            <a href="#jump__main" rel="noreferrer" class="headerNav__item">Sobre Mim</a>
+            <a href="#jump__aprendizado" rel="noreferrer" class="headerNav__item">Meu Aprendizado</a>
+            <a href="#jump__projetos" rel="noreferrer" class="headerNav__item">Projetos</a>
+            <a href="#jump__contato" rel="noreferrer" class="headerNav__item">Contato + info</a>
+        </nav>
+        <ul class="menuHamb__lista">
+            <li class="menuHamb__item"><a href="#jump__main" rel="noreferrer">Sobre Mim</a></li>
+            <li class="menuHamb__item"><a href="#jump__aprendizado" rel="noreferrer">Meu Aprendizado</a></li>
+            <li class="menuHamb__item"><a href="#jump__projetos" rel="noreferrer">Projetos</a></li>
+            <li class="menuHamb__item"><a href="#jump__contato" rel="noreferrer">Contato</a></li>
+        </ul>
+    </header>
+
+    <section class="presentation">
+        <div class="container flex presentation__container">
+            <h1 class="presentation__title">Portfólio Front-End Jr</h1>
+            <p class="presentation__myname">Fabio Suzuki Akamine</p>
+        </div>
+    </section>
+
+    <main class="main" id="jump__main">
+        <div class="container flex main__container">
+            <div class="main__textcontainer">
+                <h2>Sobre Mim:</h2>
+                <p>Olá! Meu nome é Fabio Suzuki Akamine e desejo trabalhar na área de Web Developer! Tenho 26 Anos e
+                    estudei Design de Games na Universidade Anhembi Morumbi durante 3 anos e atualmente estou fazendo o
+                    curso online de Tecnólogo na Anhanguera para Desenvolvimento Web, além de outros cursos na Udemy e
+                    Alura!</p>
+                <p>Alguns dos meus hobbies são: assistir séries e filmes, jogar xadrez e jogos digitais no computador ou
+                    consoles.</p>
+            </div>
+            <div class="main__imgcontainer">
+                <img src="imagens/me_3x3.jpg" alt="personal Fabio Akamine's photo">
+            </div>
+        </div>
+    </main>
+
+    <section class="aprendizado" id="jump__aprendizado">
+        <div class="container flex aprendizado__container">
+            <h2>Meu Aprendizado</h2>
+            <div class="aprendizado__listascontainer flex">
+                <div class="aprendizado__lista">
+                    <h3>Passado:</h3>
+                    <ul class="lista">
+                        <li>Curso Design de Games na Anhembi Morumbi 3 Anos</li>
+                        <li>Cursos Alura ( certificados no <a href="https://www.linkedin.com/in/fabio-suzuki-akamine/"
+                                target="_blank" rel="noopener noreferrer">Linkedin</a> )</li>
+                        <li>Curso Front-End na <a href="#" target="_blank" rel="noopener noreferrer">Udemy</a> (
+                            certificado também no <a href="https://www.linkedin.com/in/fabio-suzuki-akamine/"
+                                target="_blank" rel="noopener noreferrer">Linkedin</a> )</li>
+                        <li>Algumas réplicas de sites do <a href="https://nicepage.com/" target="_blank"
+                                rel="noopener noreferrer">nice pages</a></li>
+                        <li>HTML,CSS e Javascript Básico para Intermediário</li>
+                        <li>Request de API(usando AXIOS), boas práticas para HTML e CSS (BEM-Block Element Model),
+                            Formulários ( sem lado do servidor )</li>
+                        <li>Flexbox(Intermediário) e Grid( básico )</li>
+                        <li>Componentes React</li>
+                        <li>React Hooks (useState , useEffect , useMemo)</li>
+                        <li>React router dom</li>
+                    </ul>
+                </div>
+                <div class="aprendizado__lista">
+                    <h3>Atualmente:</h3>
+                    <ul class="lista">
+                        <li>Penúltimo Ano do curso de Inglês na Wizard</li>
+                        <li>Curso de React Iniciante (50% Completado)</li>
+                        <li>3ºSemestre do curso de tecnólogo de Desenvolvimento Web na Anhanguera</li>
+                        <li>Estudando mais aplicações em grid para praticar</li>
+                        <li>Estudando mais sobre request ( fetch, async/await )</li>
+                        <li>Aplicando bootstrap em mais exercícios de sites</li>
+                        <li>Estudo sobre UX/UI e Web Security</li>
+                        <li>Continuo seguindo o roadmap do site <a href="https://roadmap.sh/frontend" target="_blank"
+                                rel="noopener noreferrer">roadmap.sh</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos" id="jump__projetos">
+        <div class="container flex projetos__container">
+            <div class="projetos__textcontainer">
+                <h2>Projetos/Exercícios</h2>
+                <p>Projetos e exercícios que me propus a realizar para compreender melhor os conceitos e fixar o
+                    conteúdo de maneira prática</p>
+                <p>*Última atualização dessa sessão: 27/06/2023</p>
+            </div>
+            <ul class="projetos__cardcontainer flex">
+                <li class="projetoscard">
+                    <a href="https://akaminefabio.github.io/Portf%C3%B3lio_Project-VR/" target="_blank"
+                        rel="noopener noreferrer" class="flex projetos__link">
+                        <div class="projetoscard__text">
+                            <h4>Descrição:</h4>
+                            <p>Um dos primeiros sites que repliquei para praticar HTML e CSS. Usei bastante flexbox para
+                                ajustar o layout e busquei fazer o mais fiel possivel com o original, buscando até mesmo
+                                as fontes e imagens.</p>
+                        </div>
+                        <div class="cardimg__container">
+                            <img src="imagens/project-vr-img.png" alt="imagem do card representando o projeto">
+                        </div>
+                        <h3>Projeto VR &#128279</h3>
+                    </a>
+                </li>
+                <li class="projetoscard">
+                    <a href="https://akaminefabio.github.io/Portf%C3%B3lio_Project-MusicForEveryone/" target="_blank"
+                        rel="noopener noreferrer" class="flex projetos__link">
+                        <div class="projetoscard__text">
+                            <h4>Descrição:</h4>
+                            <p>Site replicado para praticar HTML e CSS também. Usei esse site para fixar o conteúdo de
+                                flexbox. No final desse site existe um formulário mas sem o devido ajuste do lado do
+                                cliente em relação a preenchimento de informações. Tomei a liberdade de limitar o
+                                tamanho do textarea desse formulário em específico pois estava atrapalhando no design do
+                                formulário, tanto na réplica quanto no original, mas caso fosse a intenção não se
+                                preocupar com o tamanho do textarea para a mensagem, voltaria ao original sem problemas.
+                            </p>
+                        </div>
+                        <div class="cardimg__container">
+                            <img src="imagens/project-music-img.png" alt="imagem do card representando o projeto">
+                        </div>
+                        <h3>Projeto Music &#128279</h3>
+                    </a>
+                </li>
+                <li class="projetoscard">
+                    <a href="https://akaminefabio.github.io/Portf%C3%B3lio_Form/" target="_blank"
+                        rel="noopener noreferrer" class="flex projetos__link">
+                        <div class="projetoscard__text">
+                            <h4>Descrição:</h4>
+                            <p>Formulário simples, pouco HTML e CSS mas bastante javascript para deixar o formulário o
+                                melhor possível em relação a feedback de informações inseridas nos inputs. Embora seja
+                                possível colocar bastante informações só com HTML como 'required' nos campos necessários
+                                ou 'placeholder' nos inputs, são opções pouco customizáveis, por isso achei interessante
+                                o uso do javascript nesse aspecto.</p>
+                        </div>
+                        <div class="cardimg__container">
+                            <img src="imagens/project-form-img.png" alt="imagem do card representando o projeto">
+                        </div>
+                        <h3>Projeto Form &#128279</h3>
+                    </a>
+                </li>
+                <li class="projetoscard">
+                    <a href="https://akaminefabio.github.io/Portf%C3%B3lio_Table/" target="_blank"
+                        rel="noopener noreferrer" class="flex projetos__link">
+                        <div class="projetoscard__text">
+                            <h4>Descrição:</h4>
+                            <p>Percebi que me faltava responsividade em relação a tabelas para mobile e achei essa
+                                solução interessante e decidi replicá-la. Nessa tabela é usado a propriedade 'content'
+                                para exibir o que seria o 'th', é possível utilizar o 'content' no HTML, porém para uma
+                                tabela grande, achei a abordagem de aplicar o content no CSS melhor, caso venha a
+                                acontecer uma atualização da tabela em relação as 'th'.</p>
+                        </div>
+                        <div class="cardimg__container">
+                            <img src="imagens/project-table-img.png" alt="imagem do card representando o projeto">
+                        </div>
+                        <h3>Projeto Table &#128279</h3>
+                    </a>
+                </li>
+                <li class="projetoscard">
+                    <a href="https://akaminefabio.github.io/Portf%C3%B3lio_TV-API/" target="_blank"
+                        rel="noopener noreferrer" class="flex projetos__link">
+                        <div class="projetoscard__text">
+                            <h4>Descrição:</h4>
+                            <p> Um request de API usando AXIOS. Esse foi um exercício proposto durante um dos cursos da
+                                Udemy, decidi colocar mais informações na pesquisa como a nota do show e caso pesquise
+                                mais shows, colocá-los em uma nova lista em vez de apagar as informações já obtidas. Uso
+                                de request no javascript bem como DOM.</p>
+                        </div>
+                        <div class="cardimg__container">
+                            <img src="imagens/project-api-img.png" alt="imagem do card representando o projeto">
+                        </div>
+                        <h3>Projeto API &#128279</h3>
+                    </a>
+                </li>
+                <li class="projetoscard">
+                    <a href="https://akamine-react-simple.netlify.app" target="_blank" rel="noopener noreferrer"
+                        class="flex projetos__link">
+                        <div class="projetoscard__text">
+                            <h4>Descrição:</h4>
+                            <p>Para essa aplicação, aproveitei o fato de React ser eficiente para single-pages e pensei
+                                em alocar vários aprendizados em um só lugar. Ainda tem muito espaço para preencher com
+                                mais conhecimentos e a ideia é fazer isso conforme vou aprendendo. Por agora, existem
+                                componentes e uso de Hooks de forma simples, usando states e useEffect. O CSS não está
+                                dos melhores, mas na próxima atualização irei transformá-lo em responsivo e melhorarei
+                                seus estilos, assim como adicionarei mais um aprendizado.</p>
+                        </div>
+                        <div class="cardimg__container">
+                            <img src="imagens/project-react-img.png" alt="imagem do card representando o projeto">
+                        </div>
+                        <h3>Projeto React &#128279</h3>
+                    </a>
+                </li>
+                <li class="projetoscard">
+                    <a href="https://akaminereact-firebase.netlify.app/" target="_blank" rel="noopener noreferrer"
+                        class="flex projetos__link">
+                        <div class="projetoscard__text">
+                            <h4>Descrição:</h4>
+                            <p>Nesse projeto, usei o React em conjunto com o DB do Firebase. Criei uma Lista com o CRUD
+                                da Firebase. Além disso, fiz o processo de registro de usuário e login para poder
+                                utilizar a lista. Utilizei também o 'alert' personalizado com o react-toastify.</p>
+                        </div>
+                        <div class="cardimg__container">
+                            <img src="imagens/project-CRUD-firebase-img.png"
+                                alt="imagem do card representando o projeto">
+                        </div>
+                        <h3>Projeto React &#128279</h3>
+                    </a>
+                </li>
+                <li class="projetoscard">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="flex projetos__link">
+                        <div class="projetoscard__text">
+                            <h4>Descrição:</h4>
+                            <p>A ideia é replicar algum site usando alguns recursos do Bootstrap para aplicar e
+                                manipular da melhor maneira. Já usei o bootstrap mas apenas para criar botões com
+                                padrões interessantes, não outros elementos</p>
+                        </div>
+                        <div class="cardimg__container">
+                            <img src="imagens/project-ongoing.png" alt="imagem do card representando o projeto">
+                        </div>
+                        <h3>Projeto Bootstrap(em andamento) &#128279</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contato" id="jump__contato">
+        <div class="container contato__container">
+            <div class="contato__content">
+                <h2>Contato e Informações</h2>
+                <div class="contato__flex flex">
+                    <div class="contato__links">
+                        <h3>Links:</h3>
+                        <a href="https://www.linkedin.com/in/fabio-suzuki-akamine/" target="_blank"
+                            rel="noopener noreferrer"><img src="imagens/linkedin-icon-azul.png"
+                                alt="ícone link para a página do Linkedin"></a>
+                        <a href="https://github.com/AkamineFabio" target="_blank" rel="noopener noreferrer"><img
+                                src="imagens/github-icon-azul.png" alt="ícone link para a página do GitHub"></a>
+                    </div>
+                    <div class="contato__info">
+                        <h3>Informações:</h3>
+                        <ul>
+                            <li>Não coloquei meu email e um formulário, para evitar receber spam</li>
+                            <li>Tentei fazer o portfólio o mais responsivo possível, qualquer sugestão pode me contatar
+                                por um dos links</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
