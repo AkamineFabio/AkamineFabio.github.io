@@ -1,0 +1,55 @@
+.header {
+    background: linear-gradient(var(--blue), var(--blue2));
+
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.header__container {
+    padding: .5rem 0;
+}
+
+.header__button {
+    background-color: transparent;
+    border: none;
+    margin-left: 2rem;
+    color: var(--black);
+    transition: all .4s;
+}
+
+.header__button:hover {
+    cursor: pointer;
+    color: var(--white);
+}
+
+.header__button i {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.menu {
+    position: fixed;
+    top: 3rem;
+    left: 0rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--pink);
+    /* background: linear-gradient(var(--pink), var(--blue)); */
+    background: linear-gradient(var(--blue2), var(--blue));
+    z-index: 4;
+    transition: all .3s;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 1rem 4rem .5rem 1rem;
+
+}
+
+.menu a:hover {
+    background-color: var(--pink);
+    color: var(--black);
+}
