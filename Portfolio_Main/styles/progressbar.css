@@ -1,0 +1,97 @@
+.bar__box {
+    margin: .5rem 0;
+    padding-top: 1rem;
+}
+
+.bar__title {
+    display: inline-block;
+    padding: .5rem 0;
+}
+
+.bar__box .skill__bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0.3em;
+}
+
+.skill__bar .bar__per {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: 0.3em;
+    background: var(--blue);
+    padding: .5rem 0;
+    opacity: 0;
+}
+
+.skill__show-anim {
+    animation: progress 2s ease-in-out forwards;
+}
+
+.skill__bar .bar__per-html {
+    width: 85%;
+}
+
+.skill__bar .bar__per-eng {
+    width: 85%;
+}
+
+.skill__bar .bar__per-strap {
+    width: 70%;
+}
+
+.skill__bar .bar__per-js {
+    width: 75%;
+}
+
+.skill__bar .bar__per-git {
+    width: 75%;
+}
+
+.skill__bar .bar__per-react {
+    width: 75%;
+}
+
+.skill__bar .bar__per-tw {
+    width: 90%;
+}
+
+.skill__bar .bar__per-og {
+    width: 90%;
+}
+
+.skill__bar .bar__per-att {
+    width: 90%;
+}
+
+.skill__bar .bar__per-chl {
+    width: 95%;
+}
+
+.skill__bar .bar__per-dd {
+    width: 100%;
+}
+
+.skill__bar .bar__per-crt {
+    width: 85%;
+}
+
+
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bar__per .tooltip {
+    position: relative;
+    left: calc(100% - 2.5rem);
+    font-weight: 700;
+    color: var(--black);
+}
