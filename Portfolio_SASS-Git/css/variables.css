@@ -1,6 +1,10 @@
 :root {
     --white: #f1f1f1;
     --black: #0a0a0a;
-    --black-menu-bg: #0a0a0ae1;
+    --black-menu-bg: #0a0a0acb;
     --black-transparent: #0a0a0a33;
+    --grey: #444444;
+    --yellow: #e9e50d;
+    --font-Mont: 'Montserrat', sans-serif;
+    --font-Open: 'Open Sans', sans-serif;
 }
