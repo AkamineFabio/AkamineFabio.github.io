@@ -1,6 +1,7 @@
 @import url(variables.css);
 @import url(header.css);
 
+
 .container {
     width: 80%;
     max-width: 1200px;

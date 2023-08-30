@@ -2,12 +2,13 @@
     padding: 1rem 0;
     display: flex;
     justify-content: center;
+    font-family: var(--font-Mont);
 }
 
 .header__menu {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 .header__menu-item a {
@@ -15,6 +16,10 @@
     text-decoration: none;
     color: var(--black);
     font-size: 1.25rem;
+}
+
+.header__menu-item a:hover {
+    color: var(--yellow);
 }
 
 .header__menu-btn {
@@ -62,6 +67,10 @@
 .menu__list-item a {
     text-decoration: none;
     text-transform: capitalize;
+}
+
+.menu__list-item a:hover {
+    color: var(--grey);
 }
 
 .icon__close {
