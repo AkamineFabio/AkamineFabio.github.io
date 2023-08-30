@@ -1,0 +1,51 @@
+@mixin color-bg-color($color , $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}
+
+@import './variables.scss';
+@import './presentation.scss';
+@import url(header.css);
+
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.text__ref {
+    a {
+        text-decoration: none;
+    }
+
+    &-white-green {
+        color: white;
+
+        a {
+            color: $color-green;
+        }
+    }
+}
+
+.btn {
+    padding: 1.25rem 2.25rem;
+    text-transform: uppercase;
+    border-radius: 1.75em;
+    width: 11rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+
+    &-orange {
+        @include color-bg-color(white, orange);
+
+        &:hover {
+            @include color-bg-color(black, lighten(orange, 30%));
+        }
+    }
+}
