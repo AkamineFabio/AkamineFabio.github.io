@@ -1,0 +1,17 @@
+.cards__container {
+    padding: 4rem 0;
+}
+
+.cards__card-bg1 {
+    background: no-repeat url("../images/background_4.jpg");
+}
+
+.cards__card-bg2 {
+    background: no-repeat url("../images/background_3.jpg");
+}
+
+.cards__card-bg3 {
+    background: no-repeat url("../images/background_4.jpg");
+}
+
+/*# sourceMappingURL=cards.css.map */

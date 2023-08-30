@@ -3,16 +3,27 @@
     background-color: $bg-color;
 }
 
+@mixin bgSize-bgPosition1-bgPosition2($size , $position1, $position2) {
+    background-size: $size;
+    background-position: $position1 $position2;
+}
+
 @import './variables.scss';
 @import './presentation.scss';
+@import './cards.scss';
 @import url(header.css);
 
 
+body {
+    background-color: $background-black;
+}
+
 .container {
-    width: 80%;
+    width: 85%;
     max-width: 1100px;
     margin: 0 auto;
 }
+
 
 .hidden {
     display: none;
