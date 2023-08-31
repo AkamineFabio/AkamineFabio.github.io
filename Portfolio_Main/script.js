@@ -15,8 +15,8 @@ menuButton.addEventListener('click', () => {
 });
 
 window.addEventListener('scroll', () => {
-    console.log(`Screen position Y: ${window.scrollY}`);
-    console.log(`Screen width: ${window.innerWidth}`);
+    /*     console.log(`Screen position Y: ${window.scrollY}`);
+        console.log(`Screen width: ${window.innerWidth}`); */
     if (window.innerWidth <= 500) {
         if (window.scrollY <= 1980 || window.scrollY >= 4000) {
             for (let elements of skillBars) {
