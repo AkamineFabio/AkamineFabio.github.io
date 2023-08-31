@@ -136,6 +136,72 @@
     max-width: 100%;
   }
 }
+.sample__container {
+  display: flex;
+  padding: 4rem 0;
+  gap: 2rem;
+}
+
+.sample__text {
+  width: 50%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #F1F1F1;
+}
+.sample__text-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.sample__text-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sample__text-description {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.sample__img-container {
+  width: 50%;
+  object-fit: cover;
+  aspect-ratio: 1/0.9;
+}
+
+.sample__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+}
+
+@media (max-width: 1000px) {
+  .sample__container {
+    align-items: center;
+  }
+  .sample__text {
+    align-self: flex-start;
+  }
+}
+@media (max-width: 750px) {
+  .sample__container {
+    flex-direction: column;
+  }
+  .sample__text {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+  }
+  .sample__img-container {
+    width: 80%;
+    object-fit: cover;
+    aspect-ratio: 1/0.9;
+  }
+}
 body {
   background-color: #1A1A1A;
 }
@@ -158,6 +224,13 @@ body {
 }
 .text__ref-white-green a {
   color: yellowgreen;
+}
+.text__ref-white-orange {
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+.text__ref-white-orange a {
+  color: orange;
 }
 
 .btn {

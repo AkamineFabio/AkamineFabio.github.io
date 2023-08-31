@@ -11,6 +11,8 @@
 @import './variables.scss';
 @import './presentation.scss';
 @import './cards.scss';
+@import './sample.scss';
+
 @import url(header.css);
 
 
@@ -41,7 +43,17 @@ body {
             color: $color-green;
         }
     }
+
+    &-white-orange {
+        font-family: $font-Raleway;
+        color: white;
+
+        a {
+            color: $color-orange ;
+        }
+    }
 }
+
 
 .btn {
     padding: 1.25rem 2.25rem;
