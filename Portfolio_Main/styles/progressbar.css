@@ -46,7 +46,11 @@
 }
 
 .skill__bar .bar__per-git {
-    width: 75%;
+    width: 80%;
+}
+
+.skill__bar .bar__per-sass {
+    width: 85%;
 }
 
 .skill__bar .bar__per-react {
@@ -63,6 +67,10 @@
 
 .skill__bar .bar__per-att {
     width: 90%;
+}
+
+.skill__bar .bar__per-anl {
+    width: 95%;
 }
 
 .skill__bar .bar__per-chl {
