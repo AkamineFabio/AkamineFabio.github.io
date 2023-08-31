@@ -9,11 +9,12 @@
 }
 
 @import './variables.scss';
+@import './header.scss';
 @import './presentation.scss';
 @import './cards.scss';
 @import './sample.scss';
 
-@import url(header.css);
+/* @import url(header.css); */
 
 
 body {
