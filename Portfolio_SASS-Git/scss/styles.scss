@@ -13,8 +13,7 @@
 @import './presentation.scss';
 @import './cards.scss';
 @import './sample.scss';
-
-/* @import url(header.css); */
+@import './ourmenu.scss';
 
 
 body {
@@ -70,6 +69,16 @@ body {
 
         &:hover {
             @include color-bg-color(black, lighten(orange, 30%));
+        }
+    }
+
+    &-green {
+        @include color-bg-color($color-black, $color-green);
+        font-family: $font-Raleway;
+        font-weight: 300;
+
+        &:hover {
+            @include color-bg-color(black, darken($color-green, 5%));
         }
     }
 }
