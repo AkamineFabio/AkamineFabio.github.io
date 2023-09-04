@@ -5,8 +5,10 @@
 
 .header__container {
     padding: 1rem 0;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: $font-Mont;
 }
 
@@ -72,6 +74,7 @@
         gap: 1rem;
 
         &-item {
+            font-family: $font-Raleway;
 
             a,
             i {
@@ -83,7 +86,7 @@
                 text-transform: capitalize;
 
                 &:hover {
-                    color: $color-grey;
+                    color: darken($color-grey, 40%);
                 }
             }
         }
@@ -124,5 +127,6 @@
     .menu__background {
         width: 50vw;
     }
+
 
 }
