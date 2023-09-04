@@ -202,7 +202,7 @@
 .cards__container {
   padding: 10rem 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   font-family: "Montserrat", sans-serif;
   gap: 1rem;
@@ -236,6 +236,27 @@
   background-color: #d4d4d4;
   background-blend-mode: multiply;
 }
+.cards__card-bg4 {
+  background: no-repeat url("../images/background_card_4.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #d4d4d4;
+  background-blend-mode: multiply;
+}
+.cards__card-bg5 {
+  background: no-repeat url("../images/background_card_5.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #d4d4d4;
+  background-blend-mode: multiply;
+}
+.cards__card-bg6 {
+  background: no-repeat url("../images/background_card_6.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #d4d4d4;
+  background-blend-mode: multiply;
+}
 .cards__card-title {
   text-align: center;
   color: #F1F1F1;
@@ -252,9 +273,7 @@
   }
   .cards__card {
     padding: 22% 0;
-    width: 44%;
-    min-width: 240px;
-    max-width: 400px;
+    width: clamp(240px, 44%, 400px);
   }
 }
 @media (max-width: 600px) {
@@ -264,9 +283,7 @@
   }
   .cards__card {
     padding: 22% 0;
-    width: 100%;
-    min-width: 240px;
-    max-width: 100%;
+    width: clamp(240px, 100%, 100%);
   }
 }
 .sample__container {

@@ -1,7 +1,14 @@
+@mixin bgCards() {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: $color-grey;
+    background-blend-mode: multiply;
+}
+
 .cards__container {
     padding: 10rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     font-family: $font-Mont;
     gap: 1rem;
@@ -16,9 +23,7 @@
 
     &-bg1 {
         background: no-repeat url('../images/background_4.jpg');
-        @include bgSize-bgPosition1-bgPosition2(cover, 50%, 50%);
-        background-color: $color-grey;
-        background-blend-mode: multiply;
+        @include bgCards();
     }
 
     &-bg2 {
@@ -30,9 +35,22 @@
 
     &-bg3 {
         background: no-repeat url('../images/card_img_3.jpeg');
-        @include bgSize-bgPosition1-bgPosition2(cover, 50%, 50%);
-        background-color: $color-grey;
-        background-blend-mode: multiply;
+        @include bgCards();
+    }
+
+    &-bg4 {
+        background: no-repeat url('../images/background_card_4.jpg');
+        @include bgCards();
+    }
+
+    &-bg5 {
+        background: no-repeat url('../images/background_card_5.jpg');
+        @include bgCards();
+    }
+
+    &-bg6 {
+        background: no-repeat url('../images/background_card_6.jpg');
+        @include bgCards();
     }
 
     &-title {
@@ -53,9 +71,7 @@
 
     .cards__card {
         padding: 22% 0;
-        width: 44%;
-        min-width: 240px;
-        max-width: 400px;
+        width: clamp(240px, 44%, 400px);
     }
 }
 
@@ -67,8 +83,6 @@
 
     .cards__card {
         padding: 22% 0;
-        width: 100%;
-        min-width: 240px;
-        max-width: 100%;
+        width: clamp(240px, 100%, 100%);
     }
 }
