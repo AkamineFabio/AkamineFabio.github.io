@@ -14,7 +14,7 @@
 @import './cards.scss';
 @import './sample.scss';
 @import './ourmenu.scss';
-
+@import './uptodate.scss';
 
 body {
     background-color: $background-black;
@@ -68,17 +68,21 @@ body {
         @include color-bg-color(white, orange);
 
         &:hover {
+            cursor: pointer;
             @include color-bg-color(black, lighten(orange, 30%));
         }
     }
 
     &-green {
         @include color-bg-color($color-black, $color-green);
+        border-color: $color-green;
         font-family: $font-Raleway;
         font-weight: 300;
 
         &:hover {
+            cursor: pointer;
             @include color-bg-color(black, darken($color-green, 5%));
         }
     }
+
 }

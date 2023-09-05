@@ -129,11 +129,9 @@
   color: white;
   text-transform: uppercase;
 }
-
 .presentation__container {
   padding: 5rem 0;
 }
-
 .presentation__info {
   display: flex;
   flex-direction: column;
@@ -427,6 +425,102 @@
     width: 80%;
   }
 }
+.uptodate {
+  background: no-repeat url("../images/background_1.jpg");
+  background-size: cover;
+  height: 85vh;
+  background-position: 50% 55%;
+  background-color: #d4d4d4;
+  background-blend-mode: multiply;
+}
+.uptodate__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 3rem;
+}
+.uptodate__info {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+}
+.uptodate__info-form {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+.uptodate__input {
+  width: calc(70% - 2rem);
+  border: 1px solid #F1F1F1;
+  border-radius: 2em;
+}
+.uptodate__title {
+  color: #F1F1F1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.uptodate__text {
+  color: #F1F1F1;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+}
+.uptodate__btn {
+  width: calc(30% - 2rem);
+  text-transform: uppercase;
+  border-radius: 1.75em;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  background-color: yellowgreen;
+  color: #0A0A0A;
+  padding: 0.75rem 0.5rem;
+  border-color: yellowgreen;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 1200px) {
+  .uptodate__info {
+    width: 75%;
+  }
+}
+@media (max-width: 950px) {
+  .uptodate__info {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .uptodate__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .uptodate__info {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .uptodate__info-form {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .uptodate__input {
+    width: 100%;
+    padding: 1rem 0;
+    border: 1px solid #F1F1F1;
+    border-radius: 2em;
+  }
+  .uptodate__btn {
+    width: 100%;
+  }
+}
 body {
   background-color: #1A1A1A;
 }
@@ -472,16 +566,19 @@ body {
   background-color: orange;
 }
 .btn-orange:hover {
+  cursor: pointer;
   color: black;
   background-color: #ffdb99;
 }
 .btn-green {
   color: #0A0A0A;
   background-color: yellowgreen;
+  border-color: yellowgreen;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
 .btn-green:hover {
+  cursor: pointer;
   color: black;
   background-color: #8bb92d;
 }

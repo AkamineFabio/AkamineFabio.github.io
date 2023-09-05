@@ -1,0 +1,118 @@
+.uptodate {
+    background: no-repeat url('../images/background_1.jpg');
+    background-size: cover;
+    height: 85vh;
+    background-position: 50% 55%;
+    background-color: $color-grey;
+    background-blend-mode: multiply;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        gap: 3rem;
+    }
+
+    &__info {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 60%;
+
+        &-form {
+            display: flex;
+            width: 100%;
+            gap: 2rem;
+        }
+    }
+
+    &__input {
+        width: calc(70% - 2rem);
+        border: 1px solid $color-white;
+        border-radius: $cards-border-radius;
+    }
+
+    &__title {
+        color: $color-white;
+        font-family: $font-Mont;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    &__text {
+        color: $color-white;
+        font-family: $font-Raleway;
+        font-size: 1.25rem;
+    }
+
+    &__btn {
+        width: calc(30% - 2rem);
+        text-transform: uppercase;
+        border-radius: 1.75em;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 600;
+        background-color: $color-green;
+        color: $color-black;
+        padding: .75rem .5rem;
+        border-color: $color-green;
+        font-family: $font-Raleway;
+        font-weight: 400;
+        font-size: 1.125rem;
+    }
+
+}
+
+@media(max-width:1200px) {
+    .uptodate {
+        &__info {
+            width: 75%;
+        }
+
+    }
+}
+
+@media(max-width:950px) {
+    .uptodate {
+        &__info {
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .uptodate {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__info {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+
+            &-form {
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        &__input {
+            width: 100%;
+            padding: 1rem 0;
+            border: 1px solid $color-white;
+            border-radius: $cards-border-radius;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+    }
+
+}

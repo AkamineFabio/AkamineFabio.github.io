@@ -18,18 +18,19 @@
         color: white;
         text-transform: uppercase;
     }
+
+    &__container {
+        padding: 5rem 0;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        width: 28rem;
+    }
 }
 
-.presentation__container {
-    padding: 5rem 0;
-}
-
-.presentation__info {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    width: 28rem;
-}
 
 .presentation__bubble {
     display: flex;
