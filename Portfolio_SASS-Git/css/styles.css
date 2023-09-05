@@ -521,6 +521,69 @@
     width: 100%;
   }
 }
+.contact__container {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.contact__card-icon {
+  background-color: yellowgreen;
+  padding: 0.25em;
+  font-size: 2.75rem;
+  border-radius: 50%;
+}
+.contact__card-title {
+  color: #F1F1F1;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.contact__card-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  color: #F1F1F1;
+  font-weight: 600;
+}
+.contact__card-way {
+  color: orange;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 2;
+}
+.contact__card-way:hover {
+  color: #e69500;
+}
+
+@media (max-width: 900px) {
+  .contact__container {
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  .contact__card {
+    width: calc(50% - 2rem);
+  }
+}
+@media (max-width: 650px) {
+  .contact__container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .contact__card {
+    width: 100%;
+  }
+}
 body {
   background-color: #1A1A1A;
 }
