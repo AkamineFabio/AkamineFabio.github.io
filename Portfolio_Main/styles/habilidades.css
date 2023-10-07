@@ -15,18 +15,57 @@
     text-transform: uppercase;
 }
 
-.skills__graphs {
-    width: 100%;
-    padding-top: 4rem;
-    gap: 1rem;
+.skills__bubbles {
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .skills__prof,
 .skills__soft {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.prof__bubbles-container {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.prof__bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 9rem;
+    background-color: var(--pink);
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px var(--pink);
+    text-align: center;
+}
+
+.prof__bubble-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* .skills__graphs {
+    width: 100%;
+    padding-top: 4rem;
+    gap: 1rem;
+} */
+
+/* .skills__prof,
+.skills__soft {
     width: 48%;
     padding: 1rem;
-    /* border: 1px solid var(--white); */
-}
+    /* border: 1px solid var(--white);
+} */
+
 
 .prof__title {
     font-size: 2rem;
@@ -36,8 +75,6 @@
 @media(max-width:900px) {
     .skills__title {
         font-size: 2.5rem;
-        font-weight: 700;
-        text-transform: uppercase;
     }
 
     .prof__title {
@@ -45,10 +82,7 @@
         font-weight: 400;
     }
 
-    .skills__graphs {
-        width: 100%;
-        padding-top: 4rem;
-        gap: 1rem;
+    .skills__bubbles {
         flex-direction: column;
     }
 
@@ -61,11 +95,9 @@
 }
 
 
-@media(max-width:500px) {
+@media(max-width:550px) {
     .skills__title {
         font-size: 2.5rem;
-        font-weight: 700;
-        text-transform: uppercase;
     }
 
     .prof__title {
@@ -73,10 +105,7 @@
         font-weight: 400;
     }
 
-    .skills__graphs {
-        width: 100%;
-        padding-top: 4rem;
-        gap: 1rem;
+    .skills__bubbles {
         flex-direction: column;
     }
 
@@ -85,5 +114,15 @@
         width: 100%;
         padding: 1rem;
         /* border: 1px solid var(--white); */
+    }
+
+    .prof__bubble {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .prof__bubble-text {
+        font-size: 1rem;
+        font-weight: 700;
     }
 }

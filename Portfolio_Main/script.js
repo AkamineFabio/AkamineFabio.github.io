@@ -2,8 +2,8 @@ const menuButton = document.querySelector('.header__button');
 const menu = document.querySelector('.menu');
 let isMenuOpen = false;
 
-const skillBars = document.querySelectorAll('.skill__bar');
-const skillPers = document.querySelectorAll('.bar__per');
+/* const skillBars = document.querySelectorAll('.skill__bar');
+const skillPers = document.querySelectorAll('.bar__per'); */
 
 menuButton.addEventListener('click', () => {
     isMenuOpen = !isMenuOpen;
@@ -14,9 +14,9 @@ menuButton.addEventListener('click', () => {
     }
 });
 
-window.addEventListener('scroll', () => {
-    /*     console.log(`Screen position Y: ${window.scrollY}`);
-        console.log(`Screen width: ${window.innerWidth}`); */
+/* window.addEventListener('scroll', () => {
+         console.log(`Screen position Y: ${window.scrollY}`);
+        console.log(`Screen width: ${window.innerWidth}`); 
     if (window.innerWidth <= 500) {
         if (window.scrollY <= 1980 || window.scrollY >= 4000) {
             for (let elements of skillBars) {
@@ -114,4 +114,4 @@ window.addEventListener('scroll', () => {
             }
         }
     }
-})
+}) */
