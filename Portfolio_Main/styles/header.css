@@ -1,5 +1,5 @@
 .header {
-    background: linear-gradient(var(--blue), var(--blue2));
+    background-color: var(--blue);
 
     position: fixed;
     width: 100%;
@@ -36,7 +36,7 @@
     gap: 0.5rem;
     background-color: var(--pink);
     /* background: linear-gradient(var(--pink), var(--blue)); */
-    background: linear-gradient(var(--blue2), var(--blue));
+    background: var(--blue);
     z-index: 4;
     transition: all .3s;
 }

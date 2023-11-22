@@ -18,7 +18,7 @@
 .skills__bubbles {
     padding-top: 2rem;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
 }
 
@@ -38,6 +38,7 @@
 
 .prof__bubble {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 9rem;
@@ -48,9 +49,13 @@
     text-align: center;
 }
 
+.prof__bubble i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
 .prof__bubble-text {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.25rem;
 }
 
 /* .skills__graphs {
