@@ -5,6 +5,9 @@
 
 .contato__container {
     flex-direction: column;
+    background-color: var(--black);
+    padding: 3rem 0;
+    border-radius: .5rem;
 }
 
 .contato__title {
@@ -48,13 +51,13 @@
 
 .contato__mail a {
     font-size: 3rem;
-    color: var(--blue);
+    color: var(--white);
     transition: all .4s;
 }
 
 .contato__mail a:hover {
     font-size: 3.5rem;
-    color: var(--pink);
+    color: var(--blue);
 }
 
 @media(max-width:900px) {

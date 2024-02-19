@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--blue);
+    background-color: var(--black);
 
     position: fixed;
     width: 100%;
@@ -14,13 +14,13 @@
     background-color: transparent;
     border: none;
     margin-left: 2rem;
-    color: var(--black);
+    color: var(--white);
     transition: all .4s;
 }
 
 .header__button:hover {
     cursor: pointer;
-    color: var(--white);
+    color: var(--blue);
 }
 
 .header__button i {
@@ -34,9 +34,8 @@
     left: 0rem;
     flex-direction: column;
     gap: 0.5rem;
-    background-color: var(--pink);
+    background-color: var(--black);
     /* background: linear-gradient(var(--pink), var(--blue)); */
-    background: var(--blue);
     z-index: 4;
     transition: all .3s;
 }
@@ -50,6 +49,6 @@
 }
 
 .menu a:hover {
-    background-color: var(--pink);
+    background-color: var(--blue);
     color: var(--black);
 }

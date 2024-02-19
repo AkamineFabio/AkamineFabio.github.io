@@ -1,6 +1,6 @@
 .projetos {
     margin: 20rem 0;
-    color: var(--white);
+    color: var(--black);
 }
 
 .projects__container {
@@ -9,8 +9,8 @@
 }
 
 .projects__title {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 4.5rem;
+    font-weight: 900;
     text-transform: uppercase;
     text-align: center;
 }
@@ -27,11 +27,10 @@
     object-fit: cover;
     min-width: 20rem;
     text-decoration: none;
-    box-shadow: .75rem .75rem .75rem var(--blue);
+    box-shadow: .75rem .75rem .75rem var(--black);
     opacity: 1;
-    background-color: var(--white);
     transition: all .5s;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--black);
     position: relative;
 
 }
@@ -39,8 +38,8 @@
 .card:hover {
     transform: translateY(-.5rem);
     transform: scale(1.05, 1.05);
-    box-shadow: .75rem .75rem .75rem var(--pink);
-    border: 1px solid var(--pink);
+    box-shadow: .75rem .75rem .75rem var(--blue);
+    border: 1px solid var(--blue);
     transition: all 0.8s;
 }
 
@@ -154,7 +153,6 @@
         padding: 1rem;
         font-size: 1.5rem;
         letter-spacing: 0.05rem;
-
     }
 
     .card__description-title {

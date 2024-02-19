@@ -1,6 +1,6 @@
 .apresentacao {
     padding-top: 4rem;
-    color: var(--white);
+    color: var(--black);
 }
 
 
@@ -29,7 +29,7 @@
     color: var(--black);
     background-color: var(--blue);
     text-decoration: none;
-    padding: .75rem 1.25rem;
+    padding: 1rem 1.5rem;
     font-size: 1.75rem;
     font-weight: 500;
     margin: 1rem 0;
@@ -38,28 +38,36 @@
 }
 
 .apresentacao__button:hover {
-    background-color: var(--pink);
-    border-color: var(--pink);
+    background-color: var(--black);
+    border-color: var(--black);
+    color: var(--white);
     padding: 1rem 1.5rem;
 }
 
 
 .apresentacao__links-container {
     padding: .5rem 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.apresentacao__links-container i {
+.apresentacao__link {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.apresentacao__link i {
     font-size: 4rem;
-    padding-right: 2rem;
+    margin-right: 2rem;
     color: var(--blue);
     transition: all .3s;
 }
 
 .apresentacao__links-container i:hover {
-    color: var(--pink);
+    color: var(--black);
+    scale: 1.1;
 }
-
 
 @media(max-width:1200px) {
     .apresentacao__title {
