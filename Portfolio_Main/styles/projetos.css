@@ -44,7 +44,6 @@
 }
 
 .card:hover .card__description {
-    transition: all 0.8s;
     visibility: visible;
 }
 
@@ -118,7 +117,7 @@
 }
 
 @media(max-width:900px) {
-    .projetos__title {
+    .projects__title {
         font-size: 2.5rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -134,7 +133,7 @@
 }
 
 @media(max-width:700px) {
-    .projetos__title {
+    .projects__title {
         font-size: 2.5rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -163,7 +162,7 @@
 }
 
 @media(max-width:500px) {
-    .projetos__title {
+    .projects__title {
         font-size: 2.5rem;
         font-weight: 700;
         text-transform: uppercase;

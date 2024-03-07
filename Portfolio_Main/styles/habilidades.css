@@ -7,7 +7,6 @@
     color: var(--white);
     flex-direction: column;
     align-items: center;
-    background-color: var(--black);
     padding: 3rem 0;
     border-radius: .5rem;
 }
@@ -16,20 +15,14 @@
     font-size: 3.5rem;
     font-weight: 700;
     text-transform: uppercase;
+    color: var(--black);
 }
 
 .skills__bubbles {
     padding-top: 2rem;
     display: flex;
     width: 90%;
-    justify-content: space-around;
-}
-
-.skills__prof,
-.skills__soft {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    justify-content: center;
 }
 
 .prof__bubbles-container {
@@ -39,44 +32,88 @@
     gap: 1rem;
 }
 
-.prof__bubble {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 9rem;
-    height: 9rem;
-    background-color: var(--blue);
-    border-radius: 50%;
-    box-shadow: 3px 3px 20px var(--blue);
+.flipcard {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+}
+
+.flipcard__title {
+    font-size: 1.5em;
+    font-weight: 900;
     text-align: center;
-}
-
-.prof__bubble i {
-    font-size: 2rem;
-    color: var(--black);
-}
-
-.prof__bubble-text {
-    font-size: 1.25rem;
-    padding-top: .5rem;
-    color: var(--black);
+    margin: 0;
+    color: var(--blue);
     font-weight: 700;
 }
 
-/* .skills__graphs {
+.flipcard__inner {
+    position: relative;
     width: 100%;
-    padding-top: 4rem;
-    gap: 1rem;
-} */
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
 
-/* .skills__prof,
-.skills__soft {
-    width: 48%;
-    padding: 1rem;
-    /* border: 1px solid var(--white);
-} */
+.flipcard:hover .flipcard__inner {
+    transform: rotateY(180deg);
+}
 
+.flipcard__front,
+.flipcard__back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid var(--blue);
+    border-radius: 1rem;
+}
+
+.flipcard__back {
+    padding-top: 1rem;
+    justify-content: flex-start;
+}
+
+.flipcard__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .25rem;
+    justify-content: flex-start;
+    padding-left: .5rem;
+    text-align: left;
+    color: var(--blue);
+    font-weight: 700;
+    padding-top: .5rem;
+}
+
+.flipcard__list li {
+    font-size: 1.125rem;
+    flex-wrap: wrap;
+}
+
+.flipcard__description {
+    font-size: 1.125rem;
+    text-align: left;
+}
+
+.flipcard__front {
+    background: linear-gradient(120deg, rgb(0, 0, 0) 60%, rgb(0, 0, 0) 88%,
+            rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0.603) 48%);
+}
+
+.flipcard__back {
+    background: linear-gradient(120deg, rgb(19, 22, 24) 30%, rgb(16, 18, 19) 88%,
+            rgb(9, 12, 14) 40%, rgb(5, 24, 26) 78%);
+    transform: rotateY(180deg);
+}
 
 .prof__title {
     font-size: 2rem;
@@ -125,6 +162,10 @@
         width: 100%;
         padding: 1rem;
         /* border: 1px solid var(--white); */
+    }
+
+    .flipcard {
+        width: 90%;
     }
 
     .prof__bubble {
