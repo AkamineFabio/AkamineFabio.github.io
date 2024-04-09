@@ -1,6 +1,5 @@
 .projetos {
     margin: 20rem 0;
-    color: var(--black);
 }
 
 .projects__container {
@@ -27,15 +26,17 @@
     object-fit: cover;
     min-width: 20rem;
     text-decoration: none;
-    box-shadow: .75rem .75rem .75rem var(--black);
+    /* box-shadow: .75rem .75rem .75rem var(--black); */
     opacity: 1;
     transition: all .5s;
     border: 1px solid var(--black);
     position: relative;
+    background-color: var(--black);
+    color: var(--blue);
 
 }
 
-.card:hover {
+/* .card:hover {
     transform: translateY(-.5rem);
     transform: scale(1.05, 1.05);
     box-shadow: .75rem .75rem .75rem var(--blue);
@@ -45,9 +46,71 @@
 
 .card:hover .card__description {
     visibility: visible;
+} */
+
+.btn__card-more {
+    margin-top: .5rem;
+    background-color: var(--blue);
+    color: var(--black);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+    border-style: solid;
+    transition: all .5s;
 }
 
-.card__description {
+.btn__card-more:hover {
+    text-decoration: underline;
+    padding: .75rem 1rem;
+}
+
+.modal-content {
+    background-color: var(--black);
+}
+
+.modal-header {
+    background-color: var(--blue);
+}
+
+.modal-title {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.modal-body {
+    color: var(--blue);
+    line-height: 1.75rem;
+    font-size: 1.25rem;
+}
+
+.modal-body a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.modal-body a:hover {
+    text-decoration: underline;
+}
+
+.btn__modal {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--blue);
+    color: var(--black);
+    transition: all .5s;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.btn__modal:hover {
+    text-decoration: underline;
+}
+
+/* .card__description {
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -63,7 +126,7 @@
     z-index: 1;
     word-break: break-word;
     hyphens: auto;
-}
+} */
 
 .card__description-title {
     font-size: 1.5rem;
@@ -76,7 +139,7 @@
 }
 
 .card__text {
-    background-color: var(--white);
+    background-color: var(--black);
     padding: 1rem;
 }
 
@@ -86,12 +149,6 @@
     text-transform: uppercase;
 }
 
-.card__tags {
-    padding-top: 1.25rem;
-    font-size: 1.125rem;
-}
-
-
 
 @media(max-width:1200px) {
     .card {
@@ -99,17 +156,16 @@
         object-fit: cover;
         min-width: 23rem;
         text-decoration: none;
-        opacity: 0.7;
         transition: all .5s;
     }
 
-    .card__description {
+    /*     .card__description {
         line-height: 1.5;
         padding: 1rem;
         font-size: 1rem;
         letter-spacing: 0.05rem;
 
-    }
+    } */
 
     .card__description-title {
         font-size: 1.5rem;
@@ -127,7 +183,6 @@
         width: 40%;
         min-width: 18rem;
         text-decoration: none;
-        opacity: 0.7;
         transition: all .5s;
     }
 }
@@ -143,17 +198,16 @@
         width: 100%;
         object-fit: cover;
         text-decoration: none;
-        opacity: 0.7;
         transition: all .5s;
     }
 
-    .card__description {
+    /*     .card__description {
         line-height: 1.75;
         padding: 1rem;
         font-size: 1.5rem;
         letter-spacing: 0.05rem;
     }
-
+ */
     .card__description-title {
         font-size: 1.5rem;
     }
