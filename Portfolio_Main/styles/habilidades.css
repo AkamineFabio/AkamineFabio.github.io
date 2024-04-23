@@ -48,6 +48,11 @@
     font-weight: 700;
 }
 
+.flipcard__clickme {
+    padding-top: .5rem;
+    color: var(--blue);
+}
+
 .flipcard__inner {
     position: relative;
     width: 100%;

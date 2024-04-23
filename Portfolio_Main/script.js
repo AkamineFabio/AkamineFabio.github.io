@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 let isMenuOpen = false;
 
 const allFlipCards = document.querySelectorAll('.flipcard');
+const allFlipClickMe = document.querySelectorAll('.flipcard__clickme');
 
 let hasTouchScreen = false;
 let isFlipped = false;
@@ -39,6 +40,10 @@ if (hasTouchScreen) {
             }
         });
 
+    }
+
+    for (let flips of allFlipClickMe) {
+        flips.innerText = 'Click Me!';
     }
 }
 
