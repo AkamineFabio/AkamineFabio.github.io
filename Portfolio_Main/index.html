@@ -28,7 +28,7 @@
 
 <body>
     <section class="cabecalho">
-        <header class="header" role="heading">
+        <header class="header" role="banner">
             <div class="header__container">
                 <button class="header__button" aria-label="button to open menu navigation">
                     <i class="fa-solid fa-bars menu__icon"></i>
@@ -43,8 +43,8 @@
         </nav>
     </section>
 
-    <section class="apresentacao scroll__anim" id="apresentacao">
-        <main class="apresentacao__container container flex">
+    <section class="apresentacao scroll__anim" id="apresentacao" role="doc-abstract">
+        <main class="apresentacao__container container flex" role="main">
             <div class="border__circle">
                 <div class="border__content">
                     <img src="images/me_3x3.jpg" alt="foto de perfil de Fabio Akamine">
@@ -56,12 +56,12 @@
                 download="Curriculo_Fabio_Akamine"><i class="fa-solid fa-download"></i> Download CV</a>
             <div class="apresentacao__links-container">
                 <a href="https://www.linkedin.com/in/fabio-suzuki-akamine/" class="apresentacao__link" target="_blank"
-                    rel="noopener noreferrer" aria-label="navigate to Fabio Akamine's linkedin page"><i
+                    rel="noopener noreferrer" aria-label="navegar para perfil do Linkedin"><i
                         class="fa-brands fa-linkedin"></i>
                     <p class="apresentacao__link_text">Linkedin</p>
                 </a>
-                <a href="https://github.com/AkamineFabio" class="apresentacao__link" target="_blank"
-                    rel="noopener noreferrer" aria-label="navigate to Fabio Akamine's Github page"><i
+                <a href="https://github.com/AkamineFabio" aria-label="GitHub icon" class="apresentacao__link"
+                    target="_blank" rel="noopener noreferrer" aria-label="navegar para o perfil do GitHub"><i
                         class="fa-brands fa-square-github"></i>
                     <p class="apresentacao__link_text">GitHub</p>
                 </a>
@@ -69,7 +69,7 @@
         </main>
     </section>
 
-    <section class="sobremim scroll__anim" id="sobremim">
+    <section class="sobremim scroll__anim" id="sobremim" role="doc-abstract">
         <div class="sobre__container container flex">
             <h2 class="sobre__title">Sobre Mim</h2>
             <p class="sobre__text">Sou um profissional estudando Desenvolvimento Web na Anhanguera, já estudei Design de
@@ -83,7 +83,7 @@
         </div>
     </section>
 
-    <section class="habilidades scroll__anim" id="habilidades">
+    <section class="habilidades scroll__anim" id="habilidades" role="doc-abstract">
         <div class="skills__container container flex">
             <h2 class="skills__title">Habilidades</h2>
             <div class="skills__bubbles">
@@ -218,7 +218,7 @@
             </div>
     </section>
 
-    <section class="projetos" id="projetos">
+    <section class="projetos" id="projetos" role="doc-abstract">
         <div class="projects__container container flex">
             <h2 class="projects__title">Projetos pessoais</h2>
             <div class="project__cards flex">
@@ -497,8 +497,8 @@
         </div>
     </section>
 
-    <section class="contato" id="contato">
-        <div class="contato__container container flex">
+    <section class="contato" id="contato" role="doc-abstract">
+        <footer class="contato__container container flex">
             <h2 class="contato__title">Contato</h2>
             <div class="contato__text flex">
                 <div class="contato__mail flex">
@@ -512,14 +512,13 @@
                 <div class="contato__mail flex">
                     <h3><i class="fa-solid fa-hashtag"></i> Linkedin e Github</h3>
                     <a href="https://www.linkedin.com/in/fabio-suzuki-akamine/" target="_blank"
-                        rel="noopener noreferrer" aria-label="navigate to Fabio Akamine's linkedin page"><i
+                        rel="noopener noreferrer" aria-label="navegar para perfil do Linkedin"><i
                             class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/AkamineFabio" target="_blank" rel="noopener noreferrer"><i
-                            class="fa-brands fa-square-github"
-                            aria-label="navigate to Fabio Akamine's Github page"></i></a>
+                    <a href="https://github.com/AkamineFabio" target="_blank" rel="noopener noreferrer"
+                        aria-label="navegar para o perfil do GitHub"><i class="fa-brands fa-square-github"></i></a>
                 </div>
             </div>
-        </div>
+        </footer>
     </section>
 
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
